@@ -3,4 +3,4 @@
 
 # 内容介绍
 
-1. demo01：如何一个SpringBoot项目；博客地址 https://www.jianshu.com/p/2399e82c926f
+1. demo01：如何一个SpringBoot项目；博客地址 https://juejin.im/post/5dc13038e51d456f28370fe3
