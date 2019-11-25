@@ -6,9 +6,9 @@ public class App2 extends Thread {
 
     @Override
     public void run() {
-        synchronized (this) {
+        synchronized (App2.class) {
             while (index <= MAX) {
-                System.out.println(Thread.currentThread().getName() + " is running , index is " + index++);
+                System.out.println(Thread.currentThread().getName() + " is running , index is " + (index++));
             }
         }
     }

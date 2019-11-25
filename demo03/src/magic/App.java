@@ -27,10 +27,22 @@ public class App {
             // 修饰类
             // new Thread(app::clazz).start();
             // 查看阻塞
-            new Thread(app::block2).start();
+            // new Thread(app::block2).start();
         }
 
+
+        App app1 = new App();
+        App app2 = new App();
+        App app3 = new App();
+        App app4 = new App();
+        App app5 = new App();
+        new Thread(app1::block).start();
+        new Thread(app2::block).start();
+        new Thread(app3::block).start();
+        new Thread(app4::block).start();
+        new Thread(app5::block).start();
     }
+
 
     /**
      * 线程不安全情况下
@@ -76,7 +88,6 @@ public class App {
             System.out.println(Thread.currentThread().getName() + " is running , index is " + index++);
         }
     }
-
 
 
     /**
